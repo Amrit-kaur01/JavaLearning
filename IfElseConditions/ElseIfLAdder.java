@@ -8,7 +8,7 @@ public class ElseIfLAdder {
     public static void main(String args[]) {
         int wpm=32; //variable to store the value of words per minute
         
-        //Based on the value of wpm it will print your typing speed status
+        //Based on the value of wpm it will print the typing speed status
         if(wpm<15){
             System.out.println("very slow");
         }

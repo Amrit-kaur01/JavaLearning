@@ -7,7 +7,14 @@ public class IfExample{
     {
         String name = "Alice"; 
 
-        //checking the name
+        /*
+         syntax of if statement
+          if(boolean expresssion T or F)
+          {
+            //this will execute when boolean expression evaluates to true 
+          }
+          
+         */
         if(name.equals("Alice"))
             System.out.println("Hello Alice");
         
