@@ -1,4 +1,4 @@
-package Polymorphism;
+package OOPs_concepts.Polymorphism;
 /*
  * Runtime polymorhpism also called dynamic method dispatch is a process in which call to an overridden method is resolved at run-time rather than compile-time
  * overridden method is called through the refernece variable of a superclass

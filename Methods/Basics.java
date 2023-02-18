@@ -26,7 +26,7 @@ public class Basics{
         String name=sc.nextLine();
         String greetingMessage=greet(name);
         System.out.println(greetingMessage);
-
+        
     }
 
     //This method will return the string by adding Hey in the starting

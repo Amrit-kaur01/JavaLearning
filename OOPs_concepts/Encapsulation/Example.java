@@ -1,4 +1,4 @@
-package Encapsulation;
+package OOPs_concepts.Encapsulation;
 
 /*
  *refers to the bundling of fields and methods inside a single class
