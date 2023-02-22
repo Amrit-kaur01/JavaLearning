@@ -1,0 +1,6 @@
+Serialization will translate the object into byte stream. This byte stream can be used for
+following purpose:
+1. write to disk
+2. store in memory
+3. sent byte stream to other platforms over network
+4. save byte stream in DB (as BLOB)

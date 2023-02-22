@@ -17,7 +17,16 @@ interface Vehicle {
 }
 
 class Car implements Vehicle
+
 {
+	
+	String name;
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
 	public void run()
 	{
 		System.out.println("Car is running");
