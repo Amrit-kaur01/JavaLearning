@@ -1,0 +1,25 @@
+* generics means parameterized types
+
+* it allows types(int, float, user-defined types,etc.) to be a parameter to methods, classes, and interfaces.
+
+*using this we can create classes, methods that work with different data types
+
+* why generics:
+the object is the superclass of all other classes, and object reference can refer to any object. These features lack type safety. Generics add that type of safety feature
+
+* Type parameters naming conventions:
+ T - type
+ E - element
+ K - key
+ N - number
+ V - value
+ 
+ * it was introduced in JDK 5.0 with the aim of reducing bugs and adding an extra layer of abstraction over types
+ 
+ * Generics were added to Java to ensure type safety. And to ensure that generics won't cause overhead at runtime, the compiler applies a process called type erasure on generics at compile time.
+
+Type erasure removes all type parameters and replaces them with their bounds or with Object if the type parameter is unbounded. This way, the bytecode after compilation contains only normal classes, interfaces and methods, ensuring that no new types are produced. Proper casting is applied as well to the Object type at compile time.
+
+*One restriction of generics in Java is that the type parameter cannot be a primitive type. It is because generics are a compile-time feature, meaning the type parameter is erased and all generic types are implemented as type Object.Therefore, type parameters must be convertible to Object.
+Since primitive types don't extend Object, we can't use them as type parameters.
+However, Java provides boxed types for primitives, along with autoboxing and unboxing to unwrap them:

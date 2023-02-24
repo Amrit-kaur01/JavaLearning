@@ -1,0 +1,8 @@
+1. Code reuse 
+we can write methods/class/interface once and use it for any type we want
+
+2. Type safety 
+generics make errors to appear at compile-time than at run-time. For example, if you create an ArrayList that store name of students without using generic type, and if by mistake the programmer adds an integer instead of a string, the compiler will allow it. But when we retrieve this data from arraylist and apply some operations of strings, it will cause problem at run-time. Hence it is beter to catch problems at compile-time
+
+3. Individual type casting is not needed
+If we don't use generics, then everytime we retrieve data, we have to typecast it to avoid any problem. Typecasting at every retrieval operation is big headache. If we already know that our object is going to hold a particular type of data only, we need not typecast it every time.
