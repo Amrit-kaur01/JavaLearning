@@ -24,7 +24,7 @@ public class BoundedTypeParameter {
 		return max;
 	}
 
-	public static <E> String giveString(E[] arr) {
+	public static <E> String arrayToString(E[] arr) {
 		StringBuilder sb = new StringBuilder();
 		for (E element : arr)
 			sb.append(element + " ");
@@ -36,11 +36,11 @@ public class BoundedTypeParameter {
 		String[] strArray = { "Bob", "Mice", "Pink" };
 
 		// Max of integers
-		System.out.print("Max out of " + giveString(arr) + " is ");
+		System.out.print("Max out of " + arrayToString(arr) + " is ");
 		System.out.println(maximum(arr[0], arr[1], arr[2]));
 
 		// Max of strings
-		System.out.print("Max out of " + giveString(strArray) + " is ");
+		System.out.print("Max out of " + arrayToString(strArray) + " is ");
 		System.out.println(maximum(strArray[0], strArray[1], strArray[2]));
 
 	}

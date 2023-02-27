@@ -20,5 +20,7 @@ public class Basics {
             array[i]=sc.nextInt();
 
         System.out.println(Arrays.toString(array));
+        
+        sc.close();
     }
 }
