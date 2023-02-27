@@ -8,21 +8,20 @@ package interfaces.functional_interfaces;
 */
 
 //Example of functional interface
-interface Song{
+interface Song {
 	void sing(String lyrics);
 }
 
 //Basics class is implementing the functional interface
 public class Basics implements Song {
-	
-	public void sing(String lyrics)
-	{
+
+	public void sing(String lyrics) {
 		System.out.println(lyrics);
 	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
+
 		Basics obj = new Basics();
 		obj.sing("jhalak dikhla ja");
 

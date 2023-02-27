@@ -9,31 +9,29 @@ package generics.genericClass;
  * in parameter type we cannot use primitive types i.e. int,char,etc.
 */
 
-class Test <T>    //we use <> to specify parameter type
+class Test<T> // we use <> to specify parameter type
 {
-	T obj;   //an object of type T is declared here 
-	
-	Test(T obj)
-	{
+	T obj; // an object of type T is declared here
+
+	Test(T obj) {
 		this.obj = obj;
 	}
-	
-	public T getObj()
-	{
+
+	public T getObj() {
 		return obj;
 	}
 }
 
 public class Example1 {
-	
+
 	public static void main(String[] args) {
-		//Instance of integer type
+		// Instance of integer type
 		Test<Integer> intObj = new Test<Integer>(15);
 		System.out.println(intObj.getObj());
-		
-		//instance of String type
-		Test<String> strObj = new Test<String>("Hey");
-		System.out.println(strObj.getObj());
+
+		// instance of String type
+		Test<String> stringObj = new Test<String>("Hey");
+		System.out.println(stringObj.getObj());
 	}
-	
+
 }

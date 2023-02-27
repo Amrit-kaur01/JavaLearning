@@ -4,16 +4,12 @@ package methodReference;
  * we can refer a constructor by using the new keyword 
 */
 
-interface Message
-{
+interface Message {
 	MessageClass getMessage(String str);
 }
 
-
-class MessageClass
-{
-	public MessageClass(String str)
-	{
+class MessageClass {
+	public MessageClass(String str) {
 		System.out.println(str);
 	}
 }

@@ -12,17 +12,17 @@ import java.util.List;
 
 public class LowerBoundedWildcards {
 
-	public static void display(List<? super Integer> list) {
+	public static void displayList(List<? super Integer> list) {
 		System.out.println(list);
 	}
 
 	public static void main(String[] args) {
 
 		List<Integer> list1 = Arrays.asList(6, 7, 8, 9);
-		display(list1);
+		displayList(list1);
 
 		List<Object> list2 = Arrays.asList("Hey", "There");
-		display(list2);
+		displayList(list2);
 
 	}
 

@@ -14,30 +14,26 @@ import java.sql.SQLException;
 
 public class Throws_Example {
 
-    void m() throws SQLException
-    {
-        throw new SQLException("sql error");
-    }
+	void m() throws SQLException {
+		throw new SQLException("sql error");
+	}
 
-    void n() throws SQLException
-    {
-        m();  //we are calling a method that declares an exception. So we must either catch it or declare the exception. Here I declared the exception
-    }
+	void n() throws SQLException {
+		m(); // we are calling a method that declares an exception. So we must either catch
+				// it or declare the exception. Here I declared the exception
+	}
 
-    void p()
-    {
-        try{
-            n();
-        }
-        catch(SQLException e)
-        {
-            System.out.println("Exception handled");
-        }
-    }
+	void p() {
+		try {
+			n();
+		} catch (SQLException e) {
+			System.out.println("Exception handled");
+		}
+	}
 
-    public static void main(String[] args) {
-        Throws_Example obj =new Throws_Example();
-        obj.p();
-        System.out.println("Rest of the code");
-    }
+	public static void main(String[] args) {
+		Throws_Example obj = new Throws_Example();
+		obj.p();
+		System.out.println("Rest of the code");
+	}
 }

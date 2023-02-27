@@ -12,20 +12,19 @@ import java.util.List;
 
 public class UnboundedWildcards {
 
-	public static void displayList(List<?> list)
-	{
-		for(Object obj: list)
-			System.out.print(obj+" ");
+	public static void displayList(List<?> list) {
+		for (Object obj : list)
+			System.out.print(obj + " ");
 	}
-	
+
 	public static void main(String[] args) {
-		List<Integer> list1 = Arrays.asList(4,6,2,3);
+		List<Integer> list1 = Arrays.asList(4, 6, 2, 3);
 		System.out.println("Displaying list1");
 		displayList(list1);
-		
+
 		System.out.println();
-		
-		List<String> list2 = Arrays.asList("Bob","Hey","there");
+
+		List<String> list2 = Arrays.asList("Bob", "Hey", "there");
 		System.out.println("Displaying list2");
 		displayList(list2);
 	}

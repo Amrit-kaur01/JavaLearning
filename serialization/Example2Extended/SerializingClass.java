@@ -10,22 +10,21 @@ public class SerializingClass {
 
 	public static void main(String[] args) {
 
-		Employee emp = new Employee("Amrit","Kaur","Creative","GWL","Ruiz");
-		
+		Employee emp = new Employee("Amrit", "Kaur", "Creative", "GWL", "Ruiz");
+
 		try {
-			FileOutputStream fileOut = new FileOutputStream("D:\\JavaLearning\\JavaLearning\\src\\serialization\\Example2Extended\\Employee.txt");
+			FileOutputStream fileOut = new FileOutputStream(
+					"D:\\JavaLearning\\JavaLearning\\src\\serialization\\Example2Extended\\Employee.txt");
 			ObjectOutputStream out = new ObjectOutputStream(fileOut);
 			out.writeObject(emp);
-			
+
 			emp.companyName = "ABC";
-			
+
 			out.close();
 			fileOut.close();
-			
+
 			System.out.println("object serialized in employee.txt");
-		}
-		catch(IOException e)
-		{
+		} catch (IOException e) {
 			e.printStackTrace();
 		}
 	}

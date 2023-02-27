@@ -11,24 +11,21 @@ package exceptionHandling;
 */
 
 public class FinallyBlock {
-    public static void main(String[] args) {
-        try{
-            System.out.println("Inside try block");
-            int data = 2/0;
-            System.out.println(data);
-        }
-        catch(ArrayIndexOutOfBoundsException e)
-        {
-            System.out.println(e);
-        }
-        finally
-        {
-            System.out.println("Finally block is always executed");
-        }
+	public static void main(String[] args) {
+		try {
+			System.out.println("Inside try block");
+			int data = 2 / 0;
+			System.out.println(data);
+		} catch (ArrayIndexOutOfBoundsException e) {
+			System.out.println(e);
+		} finally {
+			System.out.println("Finally block is always executed");
+		}
 
-    }
+	}
 }
 /*
-  the code throws an exception however the catch block cannot handle it. Despite this, the finally block
-  is executed after the try block and then the program terminates abnormally.
+ * the code throws an exception however the catch block cannot handle it.
+ * Despite this, the finally block is executed after the try block and then the
+ * program terminates abnormally.
  */

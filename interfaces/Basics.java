@@ -19,16 +19,18 @@ interface Vehicle {
 class Car implements Vehicle
 
 {
-	
+
 	String name;
+
 	public String getName() {
 		return name;
 	}
+
 	public void setName(String name) {
 		this.name = name;
 	}
-	public void run()
-	{
+
+	public void run() {
 		System.out.println("Car is running");
 	}
 }
@@ -37,7 +39,7 @@ public class Basics {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
+
 		Car obj = new Car();
 		obj.run();
 

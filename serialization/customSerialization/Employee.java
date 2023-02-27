@@ -12,43 +12,43 @@ import java.io.Serializable;
 */
 
 public class Employee implements Serializable {
-	private static final long serialVersionUID = 2l;	
+	private static final long serialVersionUID = 2l;
 	private transient Address address;
 	private Person person;
-	
+
 	public Employee(Address address, Person person) {
 		super();
 		this.address = address;
 		this.person = person;
 	}
 
-	//getters and setters
+	// getters and setters
 	public Address getAddress() {
 		return address;
 	}
-	
+
 	public void setAddress(Address address) {
 		this.address = address;
 	}
+
 	public Person getPerson() {
 		return person;
 	}
+
 	public void setPerson(Person person) {
 		this.person = person;
 	}
-	
-	private void writeObject(ObjectOutputStream oos) throws IOException
-	{
+
+	private void writeObject(ObjectOutputStream oos) throws IOException {
 		oos.defaultWriteObject();
 		oos.writeObject(address.getHouseNumber());
 	}
-	
-	private void readObject(ObjectInputStream ois) throws IOException, ClassNotFoundException
-	{
+
+	private void readObject(ObjectInputStream ois) throws IOException, ClassNotFoundException {
 		ois.defaultReadObject();
 		Integer houseNo = (Integer) ois.readObject();
-		Address a =new Address(houseNo);
-		
+		Address a = new Address(houseNo);
+
 		this.setAddress(a);
 	}
 }

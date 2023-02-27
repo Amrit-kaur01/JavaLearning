@@ -1,7 +1,7 @@
 package serialization.AggregationExample;
 
 public class Address {
-	
+
 	String addressLine, city, state;
 
 	public Address(String addressLine, String city, String state) {
@@ -10,6 +10,5 @@ public class Address {
 		this.city = city;
 		this.state = state;
 	}
-	
 
 }

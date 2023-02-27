@@ -10,24 +10,21 @@ package List;
  * it throws UnsupportedOperationException if we try to modify the list
 */
 import java.util.*;
-public class AsListMethod {
-    public static void main(String[] args) {
-        try{
-            Integer  array[] = new Integer[]{1,2,3,4,5};
 
-            //getting the list view of array
-            List<Integer> list = Arrays.asList(array);
-            System.out.println(list);
-            
-            list.remove(3);  //throws exception
-        }
-        catch(NullPointerException exception)
-        {
-            System.out.println(exception);
-        }
-        catch(UnsupportedOperationException e)
-        {
-            System.out.println(e);
-        }
-    }
+public class AsListMethod {
+	public static void main(String[] args) {
+		try {
+			Integer array[] = new Integer[] { 1, 2, 3, 4, 5 };
+
+			// getting the list view of array
+			List<Integer> list = Arrays.asList(array);
+			System.out.println(list);
+
+			list.remove(3); // throws exception
+		} catch (NullPointerException exception) {
+			System.out.println(exception);
+		} catch (UnsupportedOperationException e) {
+			System.out.println(e);
+		}
+	}
 }

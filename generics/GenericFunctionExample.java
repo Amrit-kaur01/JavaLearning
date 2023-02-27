@@ -11,18 +11,17 @@ package generics;
  */
 
 public class GenericFunctionExample {
-	
-	static <T> void genericPrint(T element)
-	{
-		System.out.println(element.getClass().getCanonicalName()+" = "+element);
+
+	static <T> void genericPrint(T element) {
+		System.out.println(element.getClass().getCanonicalName() + " = " + element);
 	}
 
 	public static void main(String[] args) {
-		
+
 		genericPrint(23);
-		
+
 		genericPrint("Hello");
-		
+
 		genericPrint(true);
 	}
 

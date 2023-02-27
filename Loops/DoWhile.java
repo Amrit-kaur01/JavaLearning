@@ -11,16 +11,15 @@ package Loops;
     }while(condition);
  */
 public class DoWhile {
-    public static void main(String args[])
-    {
-        int num=1; //initialization
-        do{
-            System.out.println(num);
-            num++;
-        }while(num<=10);
-    }
+	public static void main(String args[]) {
+		int num = 1; // initialization
+		do {
+			System.out.println(num);
+			num++;
+		} while (num <= 10);
+	}
 }
 /*
- * Do while loop executes at-least once irrespective of the condition
- * After that it continues only if condition is true
+ * Do while loop executes at-least once irrespective of the condition After that
+ * it continues only if condition is true
  */

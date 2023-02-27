@@ -9,29 +9,29 @@ package Methods;
  */
 
 public class VarArgs {
-    public static void main(String[] args) {
-        
-        fun();
+	public static void main(String[] args) {
 
-        fun(1,2,3);
+		fun();
 
-        fun(5,6,7,8,9,10);
-    }
+		fun(1, 2, 3);
 
-    //Method takes variable number of integer arguments and then prints them
-    static void fun(int ...var)
-    {
-        for(int i: var)
-            System.out.print(i+", ");
-        System.out.println();
-    }
+		fun(5, 6, 7, 8, 9, 10);
+	}
 
-    //Example of method that has variable length parameters with other parameters too. There must exist only one varargs parameter that too in the last of the parameter list
-    static void fun2(int a, double ...doubleArray)
-    {
-        System.out.println("a: "+a);
+	// Method takes variable number of integer arguments and then prints them
+	static void fun(int... var) {
+		for (int i : var)
+			System.out.print(i + ", ");
+		System.out.println();
+	}
 
-        for(double d: doubleArray)
-            System.out.print(d+", ");
-    }
+	// Example of method that has variable length parameters with other parameters
+	// too. There must exist only one varargs parameter that too in the last of the
+	// parameter list
+	static void fun2(int a, double... doubleArray) {
+		System.out.println("a: " + a);
+
+		for (double d : doubleArray)
+			System.out.print(d + ", ");
+	}
 }

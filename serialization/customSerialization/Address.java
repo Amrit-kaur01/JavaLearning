@@ -2,8 +2,6 @@ package serialization.customSerialization;
 
 public class Address {
 	private int houseNumber;
-	
-	
 
 	public Address(int houseNumber) {
 		super();
@@ -17,6 +15,5 @@ public class Address {
 	public void setHouseNumber(int houseNumber) {
 		this.houseNumber = houseNumber;
 	}
-	
-	
+
 }

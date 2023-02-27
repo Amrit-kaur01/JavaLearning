@@ -7,23 +7,21 @@ import java.io.*;
 public class SerializingClass {
 
 	public static void main(String[] args) {
-		Demo object = new Demo(101,"Object101");
+		Demo object = new Demo(101, "Object101");
 		String filename = "D:\\JavaLearning\\JavaLearning\\src\\serialization\\Example1\\File.txt";
-		
+
 		try {
 			FileOutputStream file = new FileOutputStream(filename);
 			ObjectOutputStream out = new ObjectOutputStream(file);
-			
-			//Serializing the object
+
+			// Serializing the object
 			out.writeObject(object);
-			
+
 			out.close();
 			file.close();
-			
+
 			System.out.println("Object serialized");
-		}
-		catch(IOException e)
-		{
+		} catch (IOException e) {
 			System.out.println(e);
 		}
 	}

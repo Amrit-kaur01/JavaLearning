@@ -18,23 +18,20 @@ package exceptionHandling;
  */
 
 public class Basics {
-    public static void main(String[] args) {
-        try{
-            
+	public static void main(String[] args) {
+		try {
 
-            int div =100/0;   //an object of exception class will be thrown
+			int div = 100 / 0; // an object of exception class will be thrown
 
-            System.out.println(div);  //this line will not be executed because exception will occur above
-        }
-        catch(ArithmeticException e)
-        {
-            System.out.println(e);
-            
-        }
-        
-        //Rest of the code
-        System.out.println("Rest of the program");
-    }
+			System.out.println(div); // this line will not be executed because exception will occur above
+		} catch (ArithmeticException e) {
+			System.out.println(e);
+
+		}
+
+		// Rest of the code
+		System.out.println("Rest of the program");
+	}
 }
 
-//If an exeption occurs in catch block it will not be handled
+//If an exception occurs in catch block it will not be handled

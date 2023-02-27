@@ -10,17 +10,17 @@ import java.util.*;
  */
 
 public class Basics {
-    public static void main(String[] args) {
-        int array[]; //declaration - happens at compile time
-        array= new int[5]; // initialization - happens at run time. Creating the object in heap memory
+	public static void main(String[] args) {
+		int array[]; // declaration - happens at compile time
+		array = new int[5]; // initialization - happens at run time. Creating the object in heap memory
 
-        Scanner sc = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 
-        for(int i=0; i<array.length;i++)
-            array[i]=sc.nextInt();
+		for (int i = 0; i < array.length; i++)
+			array[i] = sc.nextInt();
 
-        System.out.println(Arrays.toString(array));
-        
-        sc.close();
-    }
+		System.out.println(Arrays.toString(array));
+
+		sc.close();
+	}
 }

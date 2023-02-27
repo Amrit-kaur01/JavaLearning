@@ -10,25 +10,23 @@ package methodReference;
    		containingObject::instanceMethodName
  */
 
-
 public class InstanceReference {
-	
-	public void saySomething()
-	{
+
+	public void saySomething() {
 		System.out.println("Inside instance method");
 	}
 
 	public static void main(String[] args) {
-		
+
 		InstanceReference object = new InstanceReference();
-		
-		//referring non-static method using object
+
+		// referring non-static method using object
 		Sayable sayable = object::saySomething;
-		sayable.say();  //calling interface method
-		
-		//Referring non-static method using anonymous object
+		sayable.say(); // calling interface method
+
+		// Referring non-static method using anonymous object
 		Sayable sayable2 = new InstanceReference()::saySomething;
-		sayable2.say(); 
+		sayable2.say();
 
 	}
 

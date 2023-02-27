@@ -15,19 +15,16 @@ package interfaces;
  * class that implements the clone method must override the clone() method by using public method
  */
 
-class Student implements Cloneable 
-{
+class Student implements Cloneable {
 	int rollno;
 	String name;
-	
-	public Student(int rollno, String name)
-	{
+
+	public Student(int rollno, String name) {
 		this.rollno = rollno;
 		this.name = name;
 	}
-	
-	public Object clone() throws CloneNotSupportedException
-	{
+
+	public Object clone() throws CloneNotSupportedException {
 		return super.clone();
 	}
 }
@@ -35,16 +32,13 @@ class Student implements Cloneable
 public class MarkerInterfacesExample {
 	public static void main(String[] args) {
 		Student s1 = new Student(101, "Aman");
-		System.out.println(s1.rollno+" "+s1.name);
-		try
-		{
-			Student s2 = (Student)s1.clone();
-			System.out.println(s2.rollno+" "+s2.name);
-		}
-		catch(CloneNotSupportedException e)
-		{
+		System.out.println(s1.rollno + " " + s1.name);
+		try {
+			Student s2 = (Student) s1.clone();
+			System.out.println(s2.rollno + " " + s2.name);
+		} catch (CloneNotSupportedException e) {
 			System.out.println(e);
 		}
-		
+
 	}
 }

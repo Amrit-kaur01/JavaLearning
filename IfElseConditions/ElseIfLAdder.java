@@ -6,22 +6,21 @@ package IfElseConditions;
  */
 
 public class ElseIfLAdder {
-    public static void main(String args[]) {
-        int wpm=32; //variable to store the value of words per minute
-        
-        //Based on the value of wpm it will print the typing speed status
-        if(wpm<15){
-            System.out.println("very slow");
-        }
-        else if(wpm<25) 
-            System.out.println("slow");
-        else if(wpm<35)
-            System.out.println("Average");
-        else if(wpm<50)
-            System.out.println("Good");
-        else if(wpm<60)
-            System.out.println("great");
-        else
-            System.out.println("Pro");
-    }
+	public static void main(String args[]) {
+		int wpm = 32; // variable to store the value of words per minute
+
+		// Based on the value of wpm it will print the typing speed status
+		if (wpm < 15) {
+			System.out.println("very slow");
+		} else if (wpm < 25)
+			System.out.println("slow");
+		else if (wpm < 35)
+			System.out.println("Average");
+		else if (wpm < 50)
+			System.out.println("Good");
+		else if (wpm < 60)
+			System.out.println("great");
+		else
+			System.out.println("Pro");
+	}
 }

@@ -13,22 +13,21 @@ import java.util.List;
    only. So, List<? extends Number> is less restrictive than List<Number>
 */
 public class UpperBoundedWildcards {
-	
-	private static double add(List<? extends Number> num)
-	{
+
+	private static double sumOfList(List<? extends Number> num) {
 		double sum = 0.0;
-		
-		for(Number n:num)
-			sum+= n.doubleValue();
+
+		for (Number n : num)
+			sum += n.doubleValue();
 		return sum;
 	}
-	
+
 	public static void main(String[] args) {
-		List<Integer> list1 = List.of(4,2,7,5,1);
-		System.out.println("Sum of list1 = "+add(list1));
-		
-		List<Float> list2 = List.of(2.3f,4.5f,5.6f,3.0f);
-		System.out.println("Sum of list2 = "+add(list2));
+		List<Integer> list1 = List.of(4, 2, 7, 5, 1);
+		System.out.println("Sum of list1 = " + sumOfList(list1));
+
+		List<Float> list2 = List.of(2.3f, 4.5f, 5.6f, 3.0f);
+		System.out.println("Sum of list2 = " + sumOfList(list2));
 	}
 
 }

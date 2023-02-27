@@ -8,9 +8,9 @@ package Packages;
  */
 
 import static java.lang.System.*;
+
 public class StaticImport {
-    public static void main(String args[])
-    {
-        out.println("Hello"); //we don't need to use System.out here as it has been impored using static
-    } 
+	public static void main(String args[]) {
+		out.println("Hello"); // we don't need to use System.out here as it has been impored using static
+	}
 }

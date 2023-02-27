@@ -10,26 +10,20 @@ package exceptionHandling;
 
 public class ThrowExample {
 
-    public static void speedLimit(int speed) throws ArithmeticException
-    {
-        if(speed>100)
-        {
-            throw new ArithmeticException("Overspeeding");
-        }
-        else
-            System.out.println("Good to go");
-    }
+	public static void speedLimitCheck(int speed) throws ArithmeticException {
+		if (speed > 100) {
+			throw new ArithmeticException("Overspeeding");
+		} else
+			System.out.println("Good to go");
+	}
 
-    public static void main(String[] args) {
-        try{
-            speedLimit(101);
-        }
-        catch(ArithmeticException e)
-        {
-            System.out.println(e);
-        }
-        
+	public static void main(String[] args) {
+		try {
+			speedLimitCheck(101);
+		} catch (ArithmeticException e) {
+			System.out.println(e);
+		}
 
-        System.out.println("Rest of the code");
-    }
+		System.out.println("Rest of the code");
+	}
 }

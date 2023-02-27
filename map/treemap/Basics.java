@@ -10,17 +10,17 @@ package map.treemap;
  */
 
 import java.util.*;
+
 public class Basics {
-    public static void main(String[] args) {
-        Map<Integer, String> employeeMap = new TreeMap<>();
-        employeeMap.put(101,"Employee1");
-        employeeMap.put(102,"Employee2" );
-        employeeMap.put(103,"Employee3");
-        employeeMap.put(104,"Employee4");
-        employeeMap.put(105,"Employee5");
+	public static void main(String[] args) {
+		Map<Integer, String> employeeMap = new TreeMap<>();
+		employeeMap.put(101, "Employee1");
+		employeeMap.put(102, "Employee2");
+		employeeMap.put(103, "Employee3");
+		employeeMap.put(104, "Employee4");
+		employeeMap.put(105, "Employee5");
 
-        System.out.println(employeeMap);
+		System.out.println(employeeMap);
 
-        
-    }
+	}
 }

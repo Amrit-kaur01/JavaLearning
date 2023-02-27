@@ -6,26 +6,24 @@ package OOPs_concepts.Polymorphism;
  * method invocation is determined by the JVM not compiler hence runtime polymorphism
  */
 
- class Bike{
-    void run()
-    {
-        System.out.println("Running");
-    }
- }
+class Bike {
+	void run() {
+		System.out.println("Running");
+	}
+}
 
- class Splendor extends Bike{
+class Splendor extends Bike {
 
-    void run()
-    {
-        System.out.println("Splendor running");
-    }
+	void run() {
+		System.out.println("Splendor running");
+	}
 
- }
-
+}
 
 public class Runtime {
-    public static void main(String[] args) {
-        Bike b=new Splendor(); //upcasting: reference variable of parent class refers to the object of child class
-        b.run(); //this will call the run method in splendor class
-    }
+	public static void main(String[] args) {
+		Bike b = new Splendor(); // upcasting: reference variable of parent class refers to the object of child
+									// class
+		b.run(); // this will call the run method in splendor class
+	}
 }
